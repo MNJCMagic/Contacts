@@ -10,6 +10,9 @@
 
 @interface InputCollector : NSObject
 
+
+@property (nonatomic) NSString* input;
+
 -(NSString *)inputForPrompt:(NSString *)promptString;
 
 @end
