@@ -14,6 +14,8 @@
 @property (nonatomic) NSMutableArray* contactArray;
 
 -(void)addContact:(Contact *)newContact;
--(void)listContacts;
+
+-(void)printContacts;
+
 
 @end

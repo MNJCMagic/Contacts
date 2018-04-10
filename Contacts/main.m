@@ -39,15 +39,14 @@ int main(int argc, const char * argv[]) {
                 person.name = collector.input;
                 [collector inputForPrompt:@"What is the person's email?"];
                 person.email = collector.input;
-                nextID++;
+
                 person.contactID = nextID;
                 [list addContact:person];
-               
                 
+                nextID++;
                 
             } else if ([collector.input isEqualToString:@"list"]) {
-                [list listContacts];
-            
+                [list printContacts];
             }
         }
     
