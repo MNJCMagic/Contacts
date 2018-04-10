@@ -12,6 +12,7 @@
 
 @property (nonatomic) NSString* name;
 @property (nonatomic) NSString* email;
+@property (nonatomic) NSInteger contactID;
 
 
 @end

@@ -18,6 +18,8 @@ int main(int argc, const char * argv[]) {
         ContactList *list = [[ContactList alloc] init];
         
         BOOL run = true;
+        NSInteger nextID = 0;
+        
         while (run) {
             
             
@@ -37,13 +39,13 @@ int main(int argc, const char * argv[]) {
                 person.name = collector.input;
                 [collector inputForPrompt:@"What is the person's email?"];
                 person.email = collector.input;
+                person.contactID = nextID;
                 [list addContact:person];
                 
-                
-                
+                nextID++;
                 
             } else if ([collector.input isEqualToString:@"list"]) {
-                
+                [list printContacts];
             }
         }
     
