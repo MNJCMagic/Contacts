@@ -28,7 +28,7 @@
     for (Contact *people in self.contactArray){
 
     // prints each object (contact)
-        NSLog(@"%ld %@ %@", people.contactID, people.name, people.email);
+        NSLog(@"#%ld <%@> (%@)", people.contactID, people.name, people.email);
     }
 }
 
